@@ -13,7 +13,7 @@ import robotsTxt from "astro-robots-txt"
 export default defineConfig({
   output: "static",
   prefetch: true,
-  site: "https://astro-air-bento.netlify.app",
+  site: "https://anloper.github.io",
   vite: {
     worker: {
       plugins: () => [],
