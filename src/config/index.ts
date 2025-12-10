@@ -1,4 +1,4 @@
-import { Github, Twitter } from "lucide-react"
+import { Github } from "lucide-react"
 
 export const defaultLanguage: string = "en"
 
@@ -11,14 +11,9 @@ export const common = {
   googleAnalyticsId: "",
   social: [
     {
-      icon: Twitter,
-      label: "X",
-      link: "https://x.com/",
-    },
-    {
       icon: Github,
       label: "GitHub",
-      link: "https://github.com/",
+      link: "https://github.com/dwight955",
     },
   ],
   rss: true,
@@ -74,12 +69,12 @@ export const zh = {
 
 export const en = {
   ...common,
-  siteName: "Holo",
+  siteName: "Anloper",
   meta: {
     ...common.meta,
-    title: "Holo",
-    slogan: "An Explorer",
-    description: "Art, Technology, Design, Traveling",
+    title: "Anloper",
+    slogan: "Web Developer",
+    description: "Tecnologia & Arte",
   },
   navigation: {
     ...common.navigation,
@@ -87,17 +82,17 @@ export const en = {
   },
   pageMeta: {
     archive: {
-      title: "All Posts",
+      title: "Posts",
       description: "Here are Holo's all posts",
       ogImage: "/images/page-meta/en/archive.png",
     },
     links: {
-      title: "My Friends",
+      title: "Mis Amigos",
       description: "Here are Holo's friends",
       ogImage: "/images/page-meta/en/links.png",
     },
     about: {
-      title: "About Me",
+      title: "Sobre Mi",
       description: "Here is Holo's self-introduction",
       ogImage: "/images/page-meta/en/about.png",
     },

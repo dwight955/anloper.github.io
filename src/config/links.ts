@@ -12,9 +12,9 @@ export const links = [
     avatar: "https://assets.guoqi.dev/images/avatar.png",
   },
   {
-    name: "Holo",
+    name: "Anloper",
     link: "/",
-    description: "Holo's Blog",
+    description: "Blog de Anloper",
     avatar: "/avatar.jpg",
   },
 ]
