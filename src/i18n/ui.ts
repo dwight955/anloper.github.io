@@ -9,13 +9,13 @@ export const langs = ["en", "zh"]
 
 export const ui = {
   en: {
-    "nav.home": "Home",
-    "nav.archive": "Archive",
-    "nav.about": "About",
+    "nav.home": "Inicio",
+    "nav.archive": "Archivos",
+    "nav.about": "Sobre Mi",
     "nav.links": "Links",
-    "blog.latest": "Latest Posts",
-    "archive.title": "All Posts",
-    "links.title": "My Friends",
+    "blog.latest": "Ultimos Posts",
+    "archive.title": "Todos los Pots",
+    "links.title": "Mis Amigos",
     "tag.title": "Tag:",
     "tag.no_posts": "No posts found for tag",
   },

@@ -9,36 +9,28 @@ const lang = getLangFromUrl(Astro.url)
 const config = lang === "zh" ? zh : en
 ---
 
-<header 
-class="flex h-16 w-full items-center justify-between px-4" 
-style={{
-  background: 'rgba(255, 255, 255, 0.1)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(0.2px)',
-  WebkitBackdropFilter: 'blur(0.2px)', // Necessary for Safari support
-  border: '1px solid rgba(255, 255, 255, 0.2)',
-}}
+<header
+  class="flex h-16 w-full items-center justify-between px-4"
+  style={{
+    background: "rgba(255, 255, 255, 0.1)",
+    borderRadius: "16px",
+    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+    backdropFilter: "blur(0.2px)",
+    WebkitBackdropFilter: "blur(0.2px)", // Necessary for Safari support
+    border: "1px solid rgba(255, 255, 255, 0.2)",
+  }}
 >
-  
-  <a
-    href="/"
-    data-umami-event="site-name"
-    aria-label={`${config.siteName}`}
-  >
-  <div class="container flex justify-items-center">
-<div class="relative inline-flex">
-    <img
-      src="https://cdn.discordapp.com/avatars/1177297609778540547/72f0b34abbf21d72a15c48a0a99ea944.webp?size=96"
-      alt="avatar"
-      class="inline-block relative object-cover object-center rounded-full w-12 h-12"
-    /><span
-      class="absolute min-w-[12px] min-h-[12px] rounded-full py-1 px-1 text-xs font-medium content-[''] leading-none grid place-items-center bottom-[14%] right-[14%] translate-x-2/4 translate-y-2/4 bg-green-500 text-white border border-white"
-    ></span>
-</div>
-  <div class="text-2xl font-semibold ml-3 ">{config.siteName}</div>
-  </div>
-  
+  <a href="/" data-umami-event="site-name" aria-label={`${config.siteName}`}>
+    <div class="container flex items-center">
+      <div class="inline-flex max-sm:hidden">
+        <img
+          src="https://cdn.discordapp.com/avatars/1177297609778540547/72f0b34abbf21d72a15c48a0a99ea944.webp?size=96"
+          alt="avatar"
+          class="inline-block h-12 w-12 rounded-full object-cover object-center"
+        />
+      </div>
+      <div class="ml-3 text-2xl font-semibold">{config.siteName}</div>
+    </div>
   </a>
 
   <div class="flex items-center gap-6">
